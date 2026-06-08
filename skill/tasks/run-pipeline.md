@@ -94,7 +94,7 @@ Run the scrape and build the winners list.
    - **Page link** (the advertiser's Facebook/Instagram page URL)
    - **Ad Library link** (the ad's snapshot/permalink) and the **ad archive ID**
    - Run duration, engagement signal, media type
-   - The full ad copy
+   - **The full ad copy, verbatim** — primary/body text, headline, link description, and the CTA button label. This is mandatory: every winner in the report carries its exact ad text, never a paraphrase or summary. For video ads, the on-screen and spoken copy from the teardown is captured in addition to this written ad copy.
    - The creative URL (image or video CDN link, returned because `resolveSnapshotUrls: true`)
    - The landing page URL
    The actor returns URLs and metadata, never the binary files.

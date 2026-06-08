@@ -23,13 +23,16 @@ Use {curly-braces} for variables the pipeline fills, [square-brackets] for prose
 
 ### Pulled Ad Copy
 
-[For each winning ad, the full ad copy verbatim, labeled by its row number above, tagged with who ran it.]
+[For each winning ad, the full ad copy verbatim, labeled by its row number above, tagged with who ran it. Pull every copy field exactly as written, not a paraphrase.]
 
 #### Ad {n} — {advertiser}
 - Page: [{advertiser}]({page-url})
 - Ad Library: {ad-library-url} (archive ID {ad-archive-id})
 
-{ad-copy}
+- **Primary text:** {primary-text}
+- **Headline:** {headline}
+- **Description:** {link-description}
+- **CTA button:** {cta-label}
 
 ---
 
@@ -62,6 +65,10 @@ Use {curly-braces} for variables the pipeline fills, [square-brackets] for prose
 | `page-url` | The advertiser's Facebook/Instagram page link |
 | `ad-library-url` | Permalink to the ad's Meta Ad Library snapshot |
 | `ad-archive-id` | The ad's archive ID from the library |
+| `primary-text` | The ad's main body copy, verbatim |
+| `headline` | The ad headline, verbatim |
+| `link-description` | The link description line, verbatim |
+| `cta-label` | The CTA button label (e.g. Learn More, Book Now) |
 | `keyword-list` | The agreed search terms |
 | `run-days` | Computed run time from the actor |
 | `engagement` | Engagement signal used to rank |
