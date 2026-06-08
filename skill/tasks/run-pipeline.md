@@ -66,7 +66,7 @@ Agree on the search parameters with the user. Ask as one grouped set, confirm ea
 
 5. **How many ads** — ask: "Do you want a list of 10, 15, 20, 25, or 30?" Default 10. We will keep the most engagement among the long-runners.
 
-6. **Report file** — ask if they want a markdown report created and where to place it. Default path under the project (e.g. `content/advertising-ops/{campaign-slug}/`). Record the path.
+6. **Report file** — first read `context/output-paths.md`. If a **Report path** is already saved there, reuse it (a quick "still dropping the report here?" confirm is enough, do not force them to re-specify). If it is `[Not yet set]`, ask where to place the markdown report, then **write that path back into `context/output-paths.md`** under "Report path" so every future run reuses it automatically.
 
 **Wait for confirmation of all parameters before scraping.**
 </step>
@@ -169,7 +169,7 @@ Generate the aligned copy + creative variations. Load @frameworks/creative-gener
 <step name="build_creative_folders">
 House each variation as its own folder with creative + copy.
 
-1. Ask where to create the folder that houses the creatives and copy (default: a `creatives/` folder next to the report).
+1. First read `context/output-paths.md`. If a **Creatives path** is already saved, reuse it (quick confirm only, no re-ask). If it is `[Not yet set]`, ask where to house the creatives and copy, then **write that path back into `context/output-paths.md`** under "Creatives path" so every future run reuses it automatically. Also stamp the "Last updated" line whenever you save a path.
 
 2. For each approved variation, using @templates/variation-folder.md:
    - Create a subfolder `variation-{n}/`

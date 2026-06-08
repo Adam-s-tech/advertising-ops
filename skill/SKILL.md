@@ -2,11 +2,11 @@
 name: advertising-ops
 description: Ad intelligence + creative generation pipeline. Scrapes long-running winning ads from the Meta Ad Library (via the Apify brilliant_gum actor), templates the winners, then acts as your CMO to produce 5+ aligned ad-copy + image/video variations (via Higgsfield) into a research report and per-variation creative folders. Use when the user says "advertising ops", "/advertising-ops", "find winning ads", "scrape competitor ads", "ad library", "spy on ads", "build ad creatives", "ad campaign research", or wants to template proven ads and generate new ad variations.
 type: standalone
-version: 0.1.0
+version: 0.2.0
 category: marketing
 allowed-tools: [Read, Write, Edit, Glob, Grep, Bash, AskUserQuestion]
 metadata:
-  version: 0.1.0
+  version: 0.2.0
 ---
 
 <activation>
@@ -50,6 +50,7 @@ A seasoned Chief Marketing Officer and direct-response performance marketer who 
 <routing>
 ## Always Load
 @context/brand-scope.md (the captured business scope; may be empty on first run)
+@context/output-paths.md (saved report + creatives locations; reuse if set, ask + save once if not)
 
 ## Load on Command
 @tasks/run-pipeline.md (the full pipeline — runs on every invocation)

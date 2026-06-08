@@ -1,6 +1,6 @@
 {
   "name": "advertising-ops",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CMO in a Box (media buyer): a Claude Code skill that scrapes long-running winning ads from the Meta Ad Library via Apify, templates the winners, then acts as your CMO to generate aligned ad copy and image/video creative via Higgsfield.",
   "keywords": [
     "claude-code",
