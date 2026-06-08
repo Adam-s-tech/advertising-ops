@@ -1,0 +1,46 @@
+{
+  "name": "advertising-ops",
+  "version": "0.1.0",
+  "description": "CMO in a Box (media buyer): a Claude Code skill that scrapes long-running winning ads from the Meta Ad Library via Apify, templates the winners, then acts as your CMO to generate aligned ad copy and image/video creative via Higgsfield.",
+  "keywords": [
+    "claude-code",
+    "claude",
+    "skill",
+    "advertising",
+    "media-buyer",
+    "cmo",
+    "facebook-ads",
+    "meta-ad-library",
+    "ad-intelligence",
+    "apify",
+    "higgsfield",
+    "creative-generation",
+    "marketing"
+  ],
+  "homepage": "https://github.com/charlesdove977/advertising-ops#readme",
+  "bugs": {
+    "url": "https://github.com/charlesdove977/advertising-ops/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesdove977/advertising-ops.git"
+  },
+  "license": "MIT",
+  "author": "Charles J Dove",
+  "type": "commonjs",
+  "bin": {
+    "advertising-ops": "bin/advertising-ops.js"
+  },
+  "files": [
+    "bin/",
+    "skill/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "test": "node bin/advertising-ops.js --version && echo 'OK'"
+  }
+}

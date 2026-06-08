@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1480px; height: 820px; }
+  body {
+    background: #0e1420;
+    font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+    color: #c9d1d9;
+    overflow: hidden;
+  }
+  .titlebar {
+    height: 38px;
+    background: #161b26;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid #222a39;
+  }
+  .dot { width: 13px; height: 13px; border-radius: 50%; margin-right: 9px; }
+  .red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+  .title {
+    flex: 1; text-align: center; color: #6b7689; font-size: 13px;
+    letter-spacing: .5px; margin-left: -60px;
+  }
+  .screen { padding: 48px 56px; }
+  .prompt { font-size: 19px; margin-bottom: 30px; }
+  .tilde { color: #8b949e; } .dollar { color: #8b5cf6; } .cmd { color: #e6edf3; }
+  .wordmark {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 76px;
+    line-height: 1.05;
+    color: #8b5cf6;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    text-shadow:
+      2px 2px 0 #6d28d9,
+      4px 4px 0 #6d28d9,
+      6px 6px 0 #5b21b6,
+      8px 8px 0 #4c1d95,
+      10px 10px 0 #4c1d95;
+    margin: 8px 0 34px;
+  }
+  .meta { font-size: 19px; margin-bottom: 14px; letter-spacing: 1px; }
+  .meta .name { color: #e6edf3; font-weight: 700; }
+  .meta .ver { color: #6b7689; }
+  .badge {
+    display: inline-block; background: #1f2633; color: #c9d1d9;
+    border: 1px solid #2f3a4d; border-radius: 5px; padding: 4px 10px;
+    font-size: 13px; margin-left: 8px; vertical-align: middle;
+  }
+  .tagline { font-size: 20px; color: #c9d1d9; margin-bottom: 8px; }
+  .byline { font-size: 15px; color: #6b7689; margin-bottom: 32px; }
+  .bullet { font-size: 18px; margin-bottom: 16px; }
+  .check { color: #3fb950; margin-right: 12px; }
+  .key { color: #8b5cf6; font-weight: 700; }
+  .done { color: #3fb950; font-size: 18px; font-weight: 700; margin-top: 30px; }
+  .cursorline { font-size: 19px; margin-top: 26px; }
+  .cursor {
+    display: inline-block; width: 11px; height: 21px; background: #c9d1d9;
+    vertical-align: -4px; margin-left: 4px;
+  }
+</style>
+</head>
+<body>
+  <div class="titlebar">
+    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+    <span class="title">Terminal — advertising-ops</span>
+  </div>
+  <div class="screen">
+    <div class="prompt"><span class="tilde">~</span> <span class="dollar">$</span> <span class="cmd">npx advertising-ops install</span></div>
+
+    <div class="wordmark">CMO IN A BOX</div>
+
+    <div class="meta"><span class="name">ADVERTISING OPS</span> <span class="ver">v0.1.0</span> <span class="badge">Claude Code Skill</span></div>
+    <div class="tagline">CMO in a Box (media buyer). Spy on winning ads, then build the creative.</div>
+    <div class="byline">Charles J Dove, @charlieautomates</div>
+
+    <div class="bullet"><span class="check">✓</span><span class="key">Scrape</span> — long-running winning ads from the Meta Ad Library via Apify</div>
+    <div class="bullet"><span class="check">✓</span><span class="key">Template</span> — top performers ranked by run time + engagement</div>
+    <div class="bullet"><span class="check">✓</span><span class="key">Brief</span> — CMO interrogates your offer, CTA, and angle</div>
+    <div class="bullet"><span class="check">✓</span><span class="key">Generate</span> — 5+ aligned copy + image/video variations via Higgsfield</div>
+
+    <div class="done">Done! Restart Claude Code to activate /advertising-ops.</div>
+
+    <div class="cursorline"><span class="tilde">~</span> <span class="dollar">$</span><span class="cursor"></span></div>
+  </div>
+</body>
+</html>
