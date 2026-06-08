@@ -14,8 +14,8 @@ Covers Facebook, Instagram, Messenger, Threads, and Audience Network ads.
 
 ### Connecting Apify
 The user connects the Apify MCP themselves:
-- Install the Apify MCP (same one we use)
-- API token: Apify, Settings, then API and Integrations, then Personal API tokens
+- The MCP is `@apify/actors-mcp-server` (https://github.com/apify/actors-mcp-server). Register it in `.mcp.json` as a stdio server: `npx -y @apify/actors-mcp-server`.
+- API token: https://console.apify.com/settings/integrations (Personal API tokens), set as the `APIFY_TOKEN` env var on the server entry.
 - Once connected, tools named `mcp__apify__*` are available
 
 Prefer the MCP over a raw API call. Always `fetch-actor-details` before `call-actor` to confirm the input schema.

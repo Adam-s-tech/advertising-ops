@@ -42,7 +42,7 @@ Load @frameworks/apify-ad-scraping.md.
 1. Check whether the Apify MCP is connected (tools named `mcp__apify__*` are available).
 
 2. **If NOT connected**, direct the user:
-   - "Go to Apify and connect the same MCP we use. Install the Apify MCP, then grab your API token from Apify, Settings, then API and Integrations, then Personal API tokens."
+   - "Go to Apify and connect the same MCP we use: `@apify/actors-mcp-server` (https://github.com/apify/actors-mcp-server). Register it in `.mcp.json` as a stdio server (`npx -y @apify/actors-mcp-server`) with your `APIFY_TOKEN`. Grab the token at https://console.apify.com/settings/integrations (Personal API tokens)."
    - Have them connect it, then re-check before continuing.
 
 3. Confirm the actor we will use: `brilliant_gum/facebook-ads-library-scraper` (it computes each ad's run time and supports a date filter, which is what makes the long-runner detection clean).

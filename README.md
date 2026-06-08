@@ -132,7 +132,7 @@ Flags:
 
 The skill drives three things at runtime inside Claude Code:
 
-- **Apify MCP** — for the ad scrape. You connect it once and paste your Apify API token. The skill walks you through it.
+- **Apify MCP** ([`@apify/actors-mcp-server`](https://github.com/apify/actors-mcp-server)) — for the ad scrape. Register it as a stdio MCP (`npx -y @apify/actors-mcp-server`) and paste your [Apify API token](https://console.apify.com/settings/integrations). The skill walks you through it.
 - **Higgsfield MCP** — for image/video generation. The skill links you to setup if it is not connected:
   - Install: https://higgsfield.ai/s/higgsfield-mcp-ig-charlieautomates-dBaWAw
   - Setup video: https://www.youtube.com/watch?v=SY8kQ6qe4YQ
