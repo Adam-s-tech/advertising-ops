@@ -134,7 +134,7 @@ The skill drives three things at runtime inside Claude Code:
 
 - **Apify MCP** ([`@apify/actors-mcp-server`](https://github.com/apify/actors-mcp-server)) — for the ad scrape. Register it as a stdio MCP (`npx -y @apify/actors-mcp-server`) and paste your [Apify API token](https://console.apify.com/settings/integrations). The skill walks you through it.
 - **Higgsfield MCP** — for image/video generation. The skill links you to setup if it is not connected:
-  - Install: https://higgsfield.ai/s/higgsfield-mcp-ig-charlieautomates-dBaWAw
+  - Install: https://higgsfield.ai/s/higgsfield-mcp-v3-earning-series-charlieautomates-ptQTLe
   - Setup video: https://www.youtube.com/watch?v=SY8kQ6qe4YQ
 - **ffmpeg** — only needed when auditing **video** ads (frame extraction + audio). Install with `brew install ffmpeg` (macOS) or your package manager.
 
